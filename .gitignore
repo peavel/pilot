@@ -1,6 +1,8 @@
 /node_modules
 /docs
+/phpunit.xml
 /stubs
+/tests
 .DS_Store
 .idea
 vendor
@@ -8,3 +10,4 @@ build
 .lock
 composer.lock
 .phpunit.result.cache
+.gitignore
