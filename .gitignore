@@ -1,0 +1,10 @@
+/node_modules
+/docs
+/stubs
+.DS_Store
+.idea
+vendor
+build
+.lock
+composer.lock
+.phpunit.result.cache
