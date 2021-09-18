@@ -1,0 +1,658 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "pilot";
+  src:url("pilot-assets?path=fonts/pilot.eot");
+  src:url("pilot-assets?path=fonts/pilot.eot?#iefix") format("embedded-opentype"),
+    url("pilot-assets?path=fonts/pilot.woff") format("woff"),
+    url("pilot-assets?path=fonts/pilot.ttf") format("truetype"),
+    url("pilot-assets?path=fonts/pilot.svg#pilot") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+[data-icon]:before {
+  font-family: "pilot" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="pilot-"]:before,
+[class*=" pilot-"]:before {
+  font-family: "pilot" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.pilot-bread:before {
+  content: "\61";
+}
+.pilot-helm:before {
+  content: "\62";
+}
+.pilot-play:before {
+  content: "\63";
+}
+.pilot-activity:before {
+  content: "\64";
+}
+.pilot-company:before {
+  content: "\65";
+}
+.pilot-file-text:before {
+  content: "\66";
+}
+.pilot-folder:before {
+  content: "\67";
+}
+.pilot-paw:before {
+  content: "\68";
+}
+.pilot-sort:before {
+  content: "\6f";
+}
+.pilot-sort-asc:before {
+  content: "\70";
+}
+.pilot-sort-desc:before {
+  content: "\71";
+}
+.pilot-handle:before {
+  content: "\6d";
+}
+.pilot-hammer:before {
+  content: "\6e";
+}
+.pilot-images:before {
+  content: "\69";
+}
+.pilot-categories:before {
+  content: "\6a";
+}
+.pilot-group:before {
+  content: "\6b";
+}
+.pilot-person:before {
+  content: "\73";
+}
+.pilot-people:before {
+  content: "\74";
+}
+.pilot-power:before {
+  content: "\75";
+}
+.pilot-tools:before {
+  content: "\76";
+}
+.pilot-anchor:before {
+  content: "\77";
+}
+.pilot-double-down:before {
+  content: "\78";
+}
+.pilot-double-up:before {
+  content: "\79";
+}
+.pilot-double-left:before {
+  content: "\7a";
+}
+.pilot-double-right:before {
+  content: "\41";
+}
+.pilot-window-list:before {
+  content: "\42";
+}
+.pilot-x:before {
+  content: "\43";
+}
+.pilot-dot:before {
+  content: "\44";
+}
+.pilot-dot-2:before {
+  content: "\45";
+}
+.pilot-dot-3:before {
+  content: "\46";
+}
+.pilot-list:before {
+  content: "\47";
+}
+.pilot-list-add:before {
+  content: "\48";
+}
+.pilot-pie-chart:before {
+  content: "\49";
+}
+.pilot-watch:before {
+  content: "\4a";
+}
+.pilot-data:before {
+  content: "\4b";
+}
+.pilot-music:before {
+  content: "\4c";
+}
+.pilot-settings:before {
+  content: "\4e";
+}
+.pilot-video:before {
+  content: "\4f";
+}
+.pilot-trash:before {
+  content: "\50";
+}
+.pilot-tv:before {
+  content: "\51";
+}
+.pilot-lock:before {
+  content: "\52";
+}
+.pilot-news:before {
+  content: "\4d";
+}
+.pilot-bag:before {
+  content: "\53";
+}
+.pilot-upload:before {
+  content: "\54";
+}
+.pilot-refresh:before {
+  content: "\55";
+}
+.pilot-character:before {
+  content: "\57";
+}
+.pilot-move:before {
+  content: "\58";
+}
+.pilot-paypal:before {
+  content: "\56";
+}
+.pilot-paper-plane:before {
+  content: "\59";
+}
+.pilot-ticket:before {
+  content: "\5a";
+}
+.pilot-youtube-play:before {
+  content: "\30";
+}
+.pilot-boat:before {
+  content: "\31";
+}
+.pilot-check:before {
+  content: "\6c";
+}
+.pilot-alarm-clock:before {
+  content: "\32";
+}
+.pilot-controller:before {
+  content: "\34";
+}
+.pilot-pizza:before {
+  content: "\35";
+}
+.pilot-backpack:before {
+  content: "\36";
+}
+.pilot-barbeque:before {
+  content: "\37";
+}
+.pilot-bomb:before {
+  content: "\38";
+}
+.pilot-book-download:before {
+  content: "\39";
+}
+.pilot-browser:before {
+  content: "\21";
+}
+.pilot-brush:before {
+  content: "\22";
+}
+.pilot-bubble-hear:before {
+  content: "\23";
+}
+.pilot-polaroid:before {
+  content: "\24";
+}
+.pilot-crop:before {
+  content: "\26";
+}
+.pilot-dashboard:before {
+  content: "\27";
+}
+.pilot-hotdog:before {
+  content: "\28";
+}
+.pilot-laptop:before {
+  content: "\29";
+}
+.pilot-paint-bucket:before {
+  content: "\2c";
+}
+.pilot-photo:before {
+  content: "\2d";
+}
+.pilot-photos:before {
+  content: "\2e";
+}
+.pilot-receipt:before {
+  content: "\2f";
+}
+.pilot-buy:before {
+  content: "\3a";
+}
+.pilot-lightbulb:before {
+  content: "\3b";
+}
+.pilot-archive:before {
+  content: "\3f";
+}
+.pilot-paperclip:before {
+  content: "\40";
+}
+.pilot-warning:before {
+  content: "\5b";
+}
+.pilot-basket:before {
+  content: "\5d";
+}
+.pilot-bell:before {
+  content: "\5e";
+}
+.pilot-book:before {
+  content: "\5f";
+}
+.pilot-chat:before {
+  content: "\60";
+}
+.pilot-down-circled:before {
+  content: "\7b";
+}
+.pilot-location:before {
+  content: "\7d";
+}
+.pilot-forward:before {
+  content: "\7e";
+}
+.pilot-flashlight:before {
+  content: "\5c";
+}
+.pilot-trophy:before {
+  content: "\e001";
+}
+.pilot-diamond:before {
+  content: "\e002";
+}
+.pilot-credit-cards:before {
+  content: "\e003";
+}
+.pilot-shop:before {
+  content: "\e004";
+}
+.pilot-sound:before {
+  content: "\e005";
+}
+.pilot-study:before {
+  content: "\e006";
+}
+.pilot-pen:before {
+  content: "\e007";
+}
+.pilot-params:before {
+  content: "\e008";
+}
+.pilot-fire:before {
+  content: "\e009";
+}
+.pilot-dollar:before {
+  content: "\e00a";
+}
+.pilot-bulb:before {
+  content: "\e00b";
+}
+.pilot-lab:before {
+  content: "\e00c";
+}
+.pilot-cup:before {
+  content: "\e00d";
+}
+.pilot-megaphone:before {
+  content: "\e00e";
+}
+.pilot-heart:before {
+  content: "\e00f";
+}
+.pilot-bubble:before {
+  content: "\e011";
+}
+.pilot-search:before {
+  content: "\e012";
+}
+.pilot-tag:before {
+  content: "\e013";
+}
+.pilot-world:before {
+  content: "\25";
+}
+.pilot-camera:before {
+  content: "\2a";
+}
+.pilot-calendar:before {
+  content: "\7c";
+}
+.pilot-mail:before {
+  content: "\e014";
+}
+.pilot-phone:before {
+  content: "\e015";
+}
+.pilot-star:before {
+  content: "\e016";
+}
+.pilot-star-half:before {
+  content: "\e017";
+}
+.pilot-star-half-1:before {
+  content: "\e018";
+}
+.pilot-star-two:before {
+  content: "\e019";
+}
+.pilot-medal-rank-star:before {
+  content: "\e01a";
+}
+.pilot-facebook:before {
+  content: "\e01b";
+}
+.pilot-google-plus:before {
+  content: "\e01c";
+}
+.pilot-twitter:before {
+  content: "\e01d";
+}
+.pilot-github:before {
+  content: "\e01e";
+}
+.pilot-code:before {
+  content: "\e01f";
+}
+.pilot-pie-graph:before {
+  content: "\e020";
+}
+.pilot-javascript:before {
+  content: "\e021";
+}
+.pilot-wand:before {
+  content: "\e022";
+}
+.pilot-wineglass:before {
+  content: "\e023";
+}
+.pilot-milestone:before {
+  content: "\e024";
+}
+.pilot-terminal:before {
+  content: "\e025";
+}
+.pilot-plug:before {
+  content: "\e026";
+}
+.pilot-gift:before {
+  content: "\e027";
+}
+.pilot-markdown:before {
+  content: "\e028";
+}
+.pilot-beer:before {
+  content: "\e029";
+}
+.pilot-credit-card:before {
+  content: "\e02a";
+}
+.pilot-bolt:before {
+  content: "\e02b";
+}
+.pilot-external:before {
+  content: "\e02c";
+}
+.pilot-magnet:before {
+  content: "\e02d";
+}
+.pilot-certificate:before {
+  content: "\e02e";
+}
+.pilot-cloud-download:before {
+  content: "\e02f";
+}
+.pilot-campfire:before {
+  content: "\e030";
+}
+.pilot-new:before {
+  content: "\e031";
+}
+.pilot-skull:before {
+  content: "\e032";
+}
+.pilot-telephone:before {
+  content: "\e033";
+}
+.pilot-trees:before {
+  content: "\e034";
+}
+.pilot-bar-chart:before {
+  content: "\e035";
+}
+.pilot-check-circle:before {
+  content: "\e036";
+}
+.pilot-exclamation:before {
+  content: "\e037";
+}
+.pilot-font:before {
+  content: "\e03a";
+}
+.pilot-puzzle:before {
+  content: "\e03b";
+}
+.pilot-smile:before {
+  content: "\e03c";
+}
+.pilot-frown:before {
+  content: "\e03d";
+}
+.pilot-meh:before {
+  content: "\e03e";
+}
+.pilot-leaf:before {
+  content: "\e03f";
+}
+.pilot-info-circled:before {
+  content: "\e040";
+}
+.pilot-underline:before {
+  content: "\e041";
+}
+.pilot-wallet:before {
+  content: "\e042";
+}
+.pilot-truck:before {
+  content: "\e043";
+}
+.pilot-eye:before {
+  content: "\e044";
+}
+.pilot-sun:before {
+  content: "\e045";
+}
+.pilot-barbell:before {
+  content: "\e04a";
+}
+.pilot-bookmark:before {
+  content: "\e04c";
+}
+.pilot-volume-up:before {
+  content: "\e04d";
+}
+.pilot-volume-down:before {
+  content: "\e04e";
+}
+.pilot-wifi:before {
+  content: "\e04f";
+}
+.pilot-pause:before {
+  content: "\e053";
+}
+.pilot-resize-full:before {
+  content: "\e054";
+}
+.pilot-resize-small:before {
+  content: "\e055";
+}
+.pilot-download:before {
+  content: "\e056";
+}
+.pilot-droplet:before {
+  content: "\e057";
+}
+.pilot-umbrella:before {
+  content: "\e058";
+}
+.pilot-harddrive:before {
+  content: "\e059";
+}
+.pilot-css3:before {
+  content: "\e05a";
+}
+.pilot-html5:before {
+  content: "\e05b";
+}
+.pilot-tree:before {
+  content: "\e05e";
+}
+.pilot-file-code:before {
+  content: "\e061";
+}
+.pilot-bug:before {
+  content: "\e062";
+}
+.pilot-rocket:before {
+  content: "\e063";
+}
+.pilot-key:before {
+  content: "\33";
+}
+.pilot-question:before {
+  content: "\2b";
+}
+.pilot-cursor:before {
+  content: "\3c";
+}
+.pilot-lifebuoy:before {
+  content: "\3d";
+}
+.pilot-thumbs-up:before {
+  content: "\3e";
+}
+.pilot-thumb-tack:before {
+  content: "\e000";
+}
+.pilot-edit:before {
+  content: "\e010";
+}
+.pilot-angle-down:before {
+  content: "\e038";
+}
+.pilot-angle-left:before {
+  content: "\e039";
+}
+.pilot-angle-right:before {
+  content: "\e046";
+}
+.pilot-angle-up:before {
+  content: "\e047";
+}
+.pilot-home:before {
+  content: "\e048";
+}
+.pilot-pirate-swords:before {
+  content: "\e04b";
+}
+.pilot-pirate:before {
+  content: "\e050";
+}
+.pilot-rum:before {
+  content: "\e051";
+}
+.pilot-cannon:before {
+  content: "\e049";
+}
+.pilot-hook:before {
+  content: "\e052";
+}
+.pilot-kraken:before {
+  content: "\e05c";
+}
+.pilot-lighthouse:before {
+  content: "\e05d";
+}
+.pilot-pirate-hat:before {
+  content: "\e05f";
+}
+.pilot-rum-1:before {
+  content: "\e060";
+}
+.pilot-ship:before {
+  content: "\e064";
+}
+.pilot-treasure:before {
+  content: "\e065";
+}
+.pilot-treasure-open:before {
+  content: "\e066";
+}
+.pilot-whale:before {
+  content: "\e067";
+}
+.pilot-compass:before {
+  content: "\e068";
+}
+.pilot-logbook:before {
+  content: "\e069";
+}
+.pilot-plus:before {
+  content: "\e06a";
+}
+.pilot-documentation:before {
+  content: "\72";
+}
+.pilot-belt:before {
+  content: "\e06b";
+}
+.pilot-zoom-in:before {
+  content: "\e06c";
+}
+.pilot-zoom-out:before {
+  content: "\e06d";
+}
+.pilot-scissors:before {
+  content: "\e06e";
+}
+.pilot-github-icon:before {
+  content: "\e06f";
+}
