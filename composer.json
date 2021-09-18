@@ -4,13 +4,13 @@
     "keywords": ["laravel", "admin", "panel"],
     "license": "MIT",
     "support": {
-        "issues": "https://github.com/the-control-group/pilot/issues",
-        "source": "https://github.com/the-control-group/pilot"
+        "issues": "https://github.com/peavel/pilot/issues",
+        "source": "https://github.com/peavel/pilot"
     },
     "authors": [
         {
-            "name": "Tony Lea",
-            "email": "tony.lea@thecontrolgroup.com"
+            "name": "Abderrahmene Merzoug",
+            "email": "obaydmerz@gmail.com"
         }
     ],
     "require": {

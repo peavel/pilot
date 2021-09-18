@@ -101,9 +101,9 @@ class PilotSettingsController extends Controller
                 continue;
             }
 
-            $key = preg_replace('/^'.Str::slug($setting->group).'./i', '', $setting->key);
+            $key = preg_replace('/^' . Str::slug($setting->group) . './i', '', $setting->key);
 
-            $setting->group = $request->input(str_replace('.', '_', $setting->key).'_group');
+            $setting->group = $request->input(str_replace('.', '_', $setting->key) . '_group');
             $setting->key = implode('.', [Str::slug($setting->group), $key]);
             $setting->value = $content;
             $setting->save();
@@ -146,9 +146,9 @@ class PilotSettingsController extends Controller
 
         $swapOrder = $setting->order;
         $previousSetting = Pilot::model('Setting')
-                            ->where('order', '<', $swapOrder)
-                            ->where('group', $setting->group)
-                            ->orderBy('order', 'DESC')->first();
+            ->where('order', '<', $swapOrder)
+            ->where('group', $setting->group)
+            ->orderBy('order', 'DESC')->first();
         $data = [
             'message'    => __('pilot::settings.already_at_top'),
             'alert-type' => 'error',
@@ -210,9 +210,9 @@ class PilotSettingsController extends Controller
         $swapOrder = $setting->order;
 
         $previousSetting = Pilot::model('Setting')
-                            ->where('order', '>', $swapOrder)
-                            ->where('group', $setting->group)
-                            ->orderBy('order', 'ASC')->first();
+            ->where('order', '>', $swapOrder)
+            ->where('group', $setting->group)
+            ->orderBy('order', 'ASC')->first();
         $data = [
             'message'    => __('pilot::settings.already_at_bottom'),
             'alert-type' => 'error',
